@@ -161,29 +161,23 @@ class CalculatorApp(ft.Container):
                 return "Error"
             else:
                 return self.format_number(operand1 / operand2)
-        
-        # 科学計算などの拡張をこの右側に追加
-        # 平方根
+               
         elif operator == "sqrt":
             import math
             return self.format_number(math.sqrt(operand1))
         
-        # 三角関数sin
         elif operator == "sin":
             import math
             return self.format_number(math.sin(math.radians(operand1)))
         
-        # 三角関数cos
         elif operator == "cos":
             import math
             return self.format_number(math.cos(math.radians(operand1)))
         
-        # 三角関数tan
         elif operator == "tan":
             import math
             return self.format_number(math.tan(math.radians(operand1)))
         
-        # 指数関数
         elif operator == "exp":
             import math
             return self.format_number(math.exp(operand1))
